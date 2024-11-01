@@ -30,6 +30,36 @@ namespace SupermarketWEB.Pages.Categories
             Category = category;
             return Page();
         }
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            _context.Attach(Category).State = EntityState.Modified;
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CategoryExists(Category.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToPage("./Index");
+        }
+        private bool CategoryExists(int id)
+        {
+            return (_context.Categories?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
     }
 }
+
 
