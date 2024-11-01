@@ -9,7 +9,7 @@
 
         public string? Description { get; set; }
 
-        public ICollection<Product> Products { get; set; } // Propieda de navegacion
+        public ICollection<Product>? Products { get; set; } // Propieda de navegacion
 
     }
 }
