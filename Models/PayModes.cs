@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace SupermarketWEB.Models
 {
-    public class PayMode
+    public class PayModes
     {
         public int Id { get; set; }
 
