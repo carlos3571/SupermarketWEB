@@ -14,7 +14,7 @@ namespace SupermarketWEB.Pages.PayMode
             _context = context;
         }
         public IList<PayModes> payModes { get; set; } = default!;
-        //public IList<Category> Categories { get; set; } = default!;
+        
         public async Task OnGetAsync()
         {
             if (_context.Categories != null)

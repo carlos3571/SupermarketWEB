@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace SupermarketWEB.Models
 {
-    public class Providers
+    public class Provider
     {
         [DisplayName("Provider Id")]
         public int ProviderId { get; set; }
@@ -27,5 +27,7 @@ namespace SupermarketWEB.Models
         [Required(ErrorMessage = "Email is required")]
         [EmailAddress(ErrorMessage = "Invalid email format")]
         public string Email { get; set; }
+
+        public int Id { get; set; } // Sera la llave primaria
     }
 }
