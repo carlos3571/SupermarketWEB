@@ -42,32 +42,56 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/source/repos/SupermarketWEB/Pages/PayMode/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5TW9kZVxDcmVhdGUuY3NodG1s
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/PayModes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5TW9kZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/source/repos/SupermarketWEB/Pages/PayMode/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5TW9kZVxEZWxldGUuY3NodG1s
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/PayModes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5TW9kZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/source/repos/SupermarketWEB/Pages/PayMode/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5TW9kZVxJbmRleC5jc2h0bWw=
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/PayModes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5TW9kZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/PayModes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5TW9kZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/carlos/source/repos/SupermarketWEB/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Providers/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJzXENyZWF0ZS5jc2h0bWw=
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Providers/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJzXERlbGV0ZS5jc2h0bWw=
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Providers/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJzXEluZGV4LmNzaHRtbA==
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Provider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Provider/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Provider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/carlos/source/repos/SupermarketWEB/Pages/Provider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/carlos/source/repos/SupermarketWEB/Pages/Shared/_ValidationScriptsPartial.cshtml]

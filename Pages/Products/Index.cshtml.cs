@@ -1,27 +1,29 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using SupermarketWEB.Models;
 using SupermarketWEB.Data;
+using SupermarketWEB.Models;
 
-namespace SupermarketWEB.Pages.PayMode
+namespace SupermarketWEB.Pages.Products
 {
     public class IndexModel : PageModel
     {
         private readonly SumpermarketContext _context;
+
         public IndexModel(SumpermarketContext context)
         {
             _context = context;
         }
-        public IList<PayModes> payModes { get; set; } = default!;
-        
+
+        public IList<Product> Products { get; set; } = default!;
+
         public async Task OnGetAsync()
         {
-            if (_context.Categories != null)
+            if (_context.Products != null)
             {
-                payModes = await _context.payModes.ToListAsync();
+                Products = await _context.Products.ToListAsync();
             }
         }
+
     }
 }
-

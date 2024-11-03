@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using SupermarketWEB.Data;
 using SupermarketWEB.Models;
 
-namespace SupermarketWEB.Pages.PayMode
+namespace SupermarketWEB.Pages.Provider
 {
     public class DeleteModel : PageModel
     {
@@ -16,51 +16,42 @@ namespace SupermarketWEB.Pages.PayMode
         }
 
         [BindProperty]
-
-        public PayModes PayModes { get; set; } = default!;
-
+        public Providers Provider { get; set; } = default!;
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.payModes == null)
+            if (id == null || _context.Providers == null)
             {
                 return NotFound();
             }
 
-            var category = await _context.payModes.FirstOrDefaultAsync(m => m.Id == id);
-
-            if (category == null)
+            var provider = await _context.Providers.FirstOrDefaultAsync(m => m.Id == id);
+            if (provider == null)
             {
                 return NotFound();
             }
-
             else
             {
-                PayModes = PayModes;
+                Provider = provider;
             }
-
             return Page();
-
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.payModes == null)
+            if (id == null || _context.Providers == null)
             {
                 return NotFound();
             }
+            var provider = await _context.Providers.FindAsync(id);
 
-           
-
-            if (PayModes != null)
+            if (provider != null)
             {
-                PayModes = PayModes;
-                _context.payModes.RemoveRange();
+                Provider = provider;
+                _context.Providers.Remove(Provider);
                 await _context.SaveChangesAsync();
             }
 
             return RedirectToPage("./Index");
         }
-
     }
 }
-

@@ -4,21 +4,25 @@ using Microsoft.EntityFrameworkCore;
 using SupermarketWEB.Data;
 using SupermarketWEB.Models;
 
-namespace SupermarketWEB.Pages.Providers
+namespace SupermarketWEB.Pages.Provider
 {
     public class IndexModel : PageModel
     {
         private readonly SumpermarketContext _context;
+
         public IndexModel(SumpermarketContext context)
         {
             _context = context;
         }
-        public IList<Provider> Providers { get; set; } = default!;
+
+        public IList<Providers> Provider { get; set; } = default!;
+
         public async Task OnGetAsync()
         {
-            if (_context.Categories != null)
+            // condición para las categorias
+            if (_context.Providers != null)
             {
-                Providers = await _context.providers.ToListAsync();
+                Provider = await _context.Providers.ToListAsync();
             }
         }
     }

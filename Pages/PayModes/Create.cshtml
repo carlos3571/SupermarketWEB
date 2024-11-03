@@ -1,9 +1,11 @@
 ﻿@page
-@model SupermarketWEB.Pages.PayMode.CreateModel
+@model SupermarketWEB.Pages.PayModes.CreateModel
 @{
     ViewData["Title"] = "Create";
 }
+
 <h1>Create</h1>
+
 <h4>Category</h4>
 <hr />
 <div class="row">
@@ -11,14 +13,14 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="PayModes.PayModeName" class="control-label"></label>
-                <input asp-for="PayModes.PayModeName" class="form-control" />
-                <span asp-validation-for="PayModes.PayModeName" class="text-danger"></span>
+                <label asp-for="PayMode.Name" class="control-label"></label>
+                <input asp-for="PayMode.Name" class="form-control" />
+                <span asp-validation-for="PayMode.Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PayModes. PayModeObservation" class="control-label"></label>
-                <input asp-for="PayModes. PayModeObservation" class="form-control" />
-                <span asp-validation-for="PayModes. PayModeObservation" class="text-danger"></span>
+                <label asp-for="PayMode.Observation" class="control-label"></label>
+                <input asp-for="PayMode.Observation" class="form-control" />
+                <span asp-validation-for="PayMode.Observation" class="text-danger"></span>
             </div>
             <div class="form-group mt-3">
                 <input type="submit" value="Create" class="btn btn-success" />
@@ -27,8 +29,10 @@
         </form>
     </div>
 </div>
+
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
